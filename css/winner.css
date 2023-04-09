@@ -1,0 +1,258 @@
+@font-face {
+  font-family: "HEINEKEN Core";
+  src: url(../fonts/HEINEKENCore.woff2) format("woff2"), url(../fonts/HEINEKENCore.woff) format("woff"), url(../fonts/HEINEKENCore.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HEINEKEN Core";
+  src: url(../fonts/HEINEKENCore-Bold.woff2) format("woff2"), url(../fonts/HEINEKENCore-Bold.woff) format("woff"), url(../fonts/HEINEKENCore-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HEINEKEN Core";
+  src: url(../fonts/HEINEKENCore-ExtraBold.woff2) format("woff2"), url(../fonts/HEINEKENCore-ExtraBold.woff) format("woff"), url(../fonts/HEINEKENCore-ExtraBold.ttf) format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heineken Serif";
+  src: url(../fonts/HeinekenSerifBold.woff2) format("woff2"), url(../fonts/HeinekenSerifBold.woff) format("woff"), url(../fonts/HeinekenSerifBold.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Futura";
+  src: url(../fonts/SVN-FuturaMedium.woff2) format("woff2"), url(../fonts/SVN-FuturaMedium.woff) format("woff"), url(../fonts/SVN-FuturaMedium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Futura";
+  src: url(../fonts/SVN-FuturaXBold.woff2) format("woff2"), url(../fonts/SVN-FuturaXBold.woff) format("woff"), url(../fonts/SVN-FuturaXBold.ttf) format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Futura Cond";
+  src: url(../fonts/SVN-FuturaCondBold.woff2) format("woff2"), url(../fonts/SVN-FuturaCondBold.woff) format("woff"), url(../fonts/SVN-FuturaCondBold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Futura Cond";
+  src: url(../fonts/SVN-FuturaCondMedium.woff2) format("woff2"), url(../fonts/SVN-FuturaCondMedium.woff) format("woff"), url(../fonts/SVN-FuturaCondMedium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+html, body {
+  background-color: #fff;
+  margin: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .pc {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .sp {
+    display: none !important;
+  }
+}
+.master__page div {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.winner-box {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.winner-header {
+  width: 100%;
+  padding: 0 5%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.winner-header h2 {
+  font-size: 56px;
+  margin: 0;
+  margin-bottom: 15px;
+  color: #fff;
+  font-family: "Heineken Serif";
+  font-weight: 400;
+  line-height: 1.2;
+}
+.winner-header p {
+  font-family: "SVN-Futura Cond";
+  font-weight: 500;
+  color: #fff;
+  font-size: 28px;
+  margin: 0;
+  padding: 0;
+}
+
+.winner-tab {
+  display: flex;
+  margin-bottom: 15px;
+}
+.winner-tab .tab-item {
+  position: relative;
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 2.5%;
+  font-family: "Heineken Serif";
+  font-weight: 400;
+  color: #62A650;
+  font-size: 28px;
+  cursor: pointer;
+  text-align: center;
+}
+.winner-tab .tab-item::after {
+  content: "";
+  position: absolute;
+  right: 2px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #fff;
+}
+.winner-tab .tab-item:last-child::after {
+  display: none;
+}
+.winner-tab .tab-item.current {
+  color: #fff;
+}
+.winner-tab .tab-item.disabled {
+  cursor: default;
+  opacity: 0.3;
+}
+
+.body-header {
+  display: flex;
+  padding: 15px 0;
+  background-color: #3BDE3A;
+}
+.body-header .title-item {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 0 2.5%;
+  font-family: "Heineken Serif";
+  font-weight: 400;
+  color: #fff;
+  font-size: 24px;
+}
+
+.detail-item {
+  display: flex;
+  border-bottom: 1px solid #00BD22;
+}
+.detail-item .detail-value {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 12px 2.5%;
+  font-family: "SVN-Futura Cond";
+  font-weight: 500;
+  color: #fff;
+  font-size: 30px;
+  white-space: nowrap;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.body-item {
+  display: none;
+}
+
+.winner-all {
+  display: flex;
+  padding: 20px 0;
+  justify-content: center;
+  align-items: center;
+}
+.winner-all .show__all {
+  font-family: "SVN-Futura";
+  font-weight: 500;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1023px) {
+  .winner {
+    background: url(../images/winner-bg-pc.jpg) no-repeat center top;
+    background-size: cover;
+    min-height: 100vh;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .winner {
+    background: url(../images/winner-bg.jpg) no-repeat center top;
+    background-size: cover;
+    min-height: 100vh;
+  }
+
+  .winner-header h2 {
+    font-size: 11.2vw;
+  }
+
+  .winner-header p {
+    font-size: 5.3333vw;
+    text-align: left;
+  }
+
+  .winner-tab .tab-item {
+    font-size: 4.2666666667vw;
+  }
+
+  .body-header .title-item {
+    font-size: 3.7333333333vw;
+  }
+  .body-header .title-item:nth-child(1) {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+  .body-header .title-item:nth-child(2) {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+
+  .detail-item .detail-value {
+    font-size: 4.2666666667vw;
+  }
+  .detail-item .detail-value:nth-child(1) {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+  .detail-item .detail-value:nth-child(2) {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+
+  .winner-all .show__all {
+    font-size: 5.3333vw;
+  }
+}

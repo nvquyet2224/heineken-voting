@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="google" content="notranslate" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Heineken music voting" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Heineken music voting</title>
+    <meta name="description" content="Heineken music voting" />
+    <meta name="keywords" content="Heineken music voting" />
+    <meta name="theme-color" content="#fff" />
+    <meta property="og:title" content="Heineken music voting" />
+    <meta property="og:description" content="Heineken music voting" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/thumbnail.jpg" />
+    <meta property="og:site_name" content="Heineken music voting" />
+    <!-- <meta property="og:url" content="https://ui.webasegroup.online/Oreo/"> -->
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Heineken music voting" />
+    <link rel="icon" href="images/favicon.png" />
+
+    <link rel="preload" as="font" crossorigin type="font/woff2" href="fonts/HEINEKENCore.woff2" />
+    <link rel="preload" as="font" crossorigin type="font/woff2" href="fonts/HEINEKENCore-Bold.woff2" />
+    <link rel="preload" as="font" crossorigin type="font/woff2" href="fonts/HEINEKENCore-ExtraBold.woff2" />
+    <link rel="preload" as="font" crossorigin type="font/woff2" href="fonts/HeinekenSerifBold.woff2" />
+    <link rel="preload" as="font" crossorigin type="font/woff2" href="fonts/SVN-FuturaMedium.woff2" />
+    <link rel="preload" as="font" crossorigin type="font/woff2" href="fonts/SVN-FuturaXBold.woff2" />
+    <link rel="preload" as="font" crossorigin type="font/woff2" href="fonts/SVN-FuturaCondMedium.woff2" />
+    <script type=“text/javascript” src=“https://nexus.ensighten.com/heineken/heineken_2020_prod/Bootstrap.js”></script>
+    <link href="css/index.css" rel="stylesheet" rel="preload" as="style" />
+</head>
+
+<body>
+    <div class="master__page">
+        <div class="master__section voting__step">
+
+            <div class="master__section__box section__step">
+
+                <div class="voting__slider swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide step1">
+                            <div class="slide-item">
+                                <div class="item-content">
+
+                                    <div class="pic refresh-pic">
+                                        <img width="269" height="393" src="images/bottle.gif"
+                                            alt="Refresh your music" />
+                                    </div>
+
+                                    <h2>Bring refreshing beats on stage!</h2>
+                                    <!-- <h2>Bản hit nào của The Chainsmokers <br>sẽ được refresh tại siêu concert?</h2> -->
+
+                                    <div class="buts full">
+                                        <div class="but-wrap but__gototrack">
+                                            <button class="action"></button>
+                                            <button type="button" class="but particles-button" id="btnGotoArtist">
+                                                <span>Vote Now</span>
+                                            </button>
+                                        </div>
+                                        <div class="but-wrap btn__seefullchart">
+                                            <button class="action">
+                                                <svg class="icon icon--rewind">
+                                                    <use xlink:href="#icon-rewind"></use>
+                                                </svg>
+                                            </button>
+                                            <a data-href="blendlist.html" href="javascript:void(0)" class="but particles-button openBlendList">
+                                                <span>Explore Refresh Playlist</span>
+                                            </a>
+                                        </div>
+                                        <div class="but-wrap">
+                                            <button class="action"></button>
+                                            <button type="button" class="but dark__green particles-button"
+                                                id="btnHowItWork">
+                                                <span>How It Works</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="pic warning__pic">
+                                        <img width="654" height="51" loading="lazy" src="images/warning.png"
+                                        alt="Người dưới 18 không được uống rượu, bia" />
+                                    </div>
+
+                                    <div class="master__step__nav single">
+                                        <div class="master__nav__next" data-next="1">
+                                            <span class="icon-next"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide step2">
+                            <div class="slide-item">
+                                <div class="item-content">
+                                    <div class="pic master__logo-main">
+                                        <img width="64" height="33" loading="lazy" src="images/logo.png"
+                                            alt="Heineken" />
+                                    </div>
+                                    <h2>Choose your <br class="sp">Favorite Act</h2>
+
+                                    <div class="artist-list">
+                                        <div class="artist-item" data-artist="1">
+                                            <div class="pic artist-pic">
+                                                <img width="120" height="120" loading="lazy" src="images/artist1.png"
+                                                    alt="Artist Name" />
+                                            </div>
+                                            <div class="artist-info">
+                                                <div class="artist-name"><span>Artist Name</span></div>
+                                                <div class="artist-note">Genre subtitle</div>
+                                            </div>
+                                        </div>
+                                        <div class="artist-item" data-artist="2">
+                                            <div class="pic artist-pic">
+                                                <img width="120" height="120" loading="lazy" src="images/artist2.png"
+                                                    alt="Artist Name" />
+                                            </div>
+                                            <div class="artist-info">
+                                                <div class="artist-name"><span>Artist Name</span></div>
+                                                <div class="artist-note">Genre subtitle</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="buts full">
+                                        <div class="but-wrap">
+                                            <button class="action"></button>
+                                            <button type="button" class="but particles-button" id="btnGoToTrack"
+                                                disabled>
+                                                <span>Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="master__back__home">
+                                        <a href="javascript:void(0)">Back To Homepage</a>
+                                    </div>
+
+                                    <div class="master__step__nav">
+                                        <div class="master__nav__prev" data-next="0">
+                                            <span class="icon-prev"></span>
+                                        </div>
+                                        <div class="master__nav__next disabled" data-next="2">
+                                            <span class="icon-next"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide step3">
+                            <div class="slide-item">
+                                <div class="item-content">
+                                    <div class="pic master__logo-main">
+                                        <img width="64" height="33" loading="lazy" src="images/logo.png"
+                                            alt="Heineken" />
+                                    </div>
+                                    <h2>Match it with a <br>Chainsmokers Track</h2>
+
+                                    <div class="track-list">
+                                        <div class="track-item" data-track="1">
+                                            <div class="pic track-pic">
+                                                <img width="120" height="120" loading="lazy" src="images/track1.png"
+                                                    alt="Track Name" />
+                                                <div class="track-but"></div>
+                                            </div>
+                                            <div class="track-info">
+                                                <div class="pic track-wave">
+                                                    <img width="112" height="42" loading="lazy" src="images/wave1.png"
+                                                        alt="Wave" />
+                                                </div>
+                                                <div class="track-name"><span>Roses</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="track-item" data-track="2">
+                                            <div class="pic track-pic">
+                                                <img width="120" height="120" loading="lazy" src="images/track2.png"
+                                                    alt="Track Name" />
+                                                <div class="track-but"></div>
+                                            </div>
+                                            <div class="track-info">
+                                                <div class="pic track-wave">
+                                                    <img width="112" height="42" loading="lazy" src="images/wave2.png"
+                                                        alt="Wave" />
+                                                </div>
+                                                <div class="track-name"><span>Don’t Let Me Down</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="track-item" data-track="3">
+                                            <div class="pic track-pic">
+                                                <img width="120" height="120" loading="lazy" src="images/track3.png"
+                                                    alt="Track Name" />
+                                                <div class="track-but"></div>
+                                            </div>
+                                            <div class="track-info">
+                                                <div class="pic track-wave">
+                                                    <img width="112" height="42" loading="lazy" src="images/wave3.png"
+                                                        alt="Wave" />
+                                                </div>
+                                                <div class="track-name"><span>Something Just Like This</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="buts full">
+                                        <div class="but-wrap">
+                                            <button class="action"></button>
+                                            <button type="button" class="but particles-button" id="btnGotoVote"
+                                                disabled>
+                                                <span>Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="master__back__home">
+                                        <a href="javascript:void(0)">Back To Homepage</a>
+                                    </div>
+
+                                    <div class="master__step__nav">
+                                        <div class="master__nav__prev" data-next="1">
+                                            <span class="icon-prev"></span>
+                                        </div>
+                                        <div class="master__nav__next disabled" data-next="3">
+                                            <span class="icon-next"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide step4">
+                            <div class="slide-item">
+                                <div class="item-content">
+                                    <div class="pic master__logo-main">
+                                        <img width="64" height="33" loading="lazy" src="images/logo.png"
+                                            alt="Heineken" />
+                                    </div>
+                                    <div class="master__share-but">
+                                        <span class="icon-share"></span>
+                                    </div>
+                                    <div class="refresh-box">
+                                        <h2>Track Refreshed!</h2>
+                                        <p>Cast your vote and <br>stand to win a VIP experience!</p>
+                                    </div>
+                                    <div class="thankyou-box">
+                                        <h2>Thanks for Voting!</h2>
+                                        <p>Stay tuned on <span class="announcement__date">[announcement date]</span>
+                                            <br>to see if you've won a VIP ticket!
+                                        </p>
+                                    </div>
+
+                                    <div class="mergle-item">
+                                        <div class="pic mergle-pic">
+                                            <img width="331" height="331" loading="lazy" src="images/mergle1.png"
+                                                alt="Artist Name" />
+                                        </div>
+                                        <div class="mergle-info">
+                                            <div class="mergle-name">Artist + <br>Track Name</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="buts full">
+                                        <div class="but-wrap btn__votenow">
+                                            <button class="action"></button>
+                                            <button type="button" class="but particles-button">
+                                                <span>Vote Now!</span>
+                                            </button>
+                                        </div>
+                                        <div class="but-wrap btn__seefullchart">
+                                            <button class="action"></button>
+                                            <a data-href="blendlist.html" href="javascript:void(0)" class="but particles-button openBlendList">
+                                                <span>Explore Refresh Playlist</span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="master__back__home">
+                                        <a href="javascript:void(0)">Back To Homepage</a>
+                                    </div>
+
+                                    <div class="master__step__nav">
+                                        <div class="master__nav__prev" data-next="2">
+                                            <span class="icon-prev"></span>
+                                        </div>
+                                        <div class="master__nav__next" data-next="4">
+                                            <span class="icon-next"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide step5 login__step">
+                            <div class="slide-item">
+                                <div class="item-content">
+
+                                    <div class="login-form">
+
+                                        <div class="pic logo">
+                                            <img width="64" height="33" loading="lazy" src="images/logo.png"
+                                                alt="Heineken" />
+                                        </div>
+
+                                        <div class="pic logo-refresh">
+                                            <img width="178" height="135" loading="lazy" src="images/refresh-icon.png"
+                                                alt="Refresh your music" />
+                                        </div>
+
+                                        <div class="flow__top">
+                                            <h2>For the Record</h2>
+                                            <!-- <h2>Nhập Thông tin cá nhân</h2> -->
+                                            <p>Fill in your info to win a VIP experience</p>
+                                        </div>
+
+                                        <form action="javascript:void(0);">
+
+                                            <div class="form-group">
+                                                <input type="text" class="input-txt" id="lg_name" name="lg_name"
+                                                    placeholder="Name" autocomplete="nope" />
+                                                <label class="caption" for="lg_name">Name <sup>*</sup></label>
+                                                <div class="error">
+                                                    <p>Name not valid</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <input type="text" class="input-txt" id="lg_phone" name="lg_phone"
+                                                    placeholder="Phone Number (+84)" autocomplete="nope" />
+                                                <label class="caption" for="lg_phone">Phone Number (+84)
+                                                    <sup>*</sup></label>
+                                                <div class="error">
+                                                    <p>Phone Number not valid</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <input type="text" class="input-txt" id="lg_email" name="lg_email"
+                                                    placeholder="Email" autocomplete="nope" />
+                                                <label class="caption" for="lg_email">Email <sup>*</sup></label>
+                                                <div class="error">
+                                                    <p>Email not valid</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group checkbox__group">
+                                                <div class="check-item">
+                                                    <input type="checkbox" class="check-input" id="chkCondition"
+                                                        name="chkCondition" checked />
+                                                    <label class="check-caption"><a href="tnc.html" target="_blank">Agree to
+                                                        T&Cs</a></label>
+                                                </div>
+                                                <div class="check-item">
+                                                    <input type="checkbox" class="check-input" id="chkPrivacy"
+                                                        name="chkPrivacy" checked />
+                                                    <label class="check-caption"><a href="privacy.html" target="_blank">Agree to
+                                                        Data Privacy and Cookies</a>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="buts full">
+                                                <div class="but-wrap">
+                                                    <button class="action"></button>
+                                                    <button type="button" class="but particles-button" id="loginSubmit" disabled>
+                                                        <span>Let’s Go</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                        </form>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide step6 otp__step">
+                            <div class="slide-item">
+                                <div class="item-content">
+
+                                    <div class="otp-form">
+
+                                        <div class="pic logo">
+                                            <img width="64" height="33" loading="lazy" src="images/logo.png"
+                                                alt="Heineken" />
+                                        </div>
+
+                                        <div class="pic logo-refresh">
+                                            <img width="178" height="135" loading="lazy" src="images/refresh-icon.png"
+                                                alt="Refresh your music" />
+                                        </div>
+
+                                        <div class="otp-pc">
+
+                                            <div class="flow__top">
+                                                <h3>Cheers! One more thing</h3>
+                                            </div>
+
+                                            <div class="otp__brief">
+                                                <p>
+                                                    OTP sent to <br class="sp" /><span class="your-phone">0908788944</span>
+                                                    <br />What’s your code?
+                                                </p>
+                                            </div>
+
+                                            <div class="otp__list">
+                                                <input class="input-otp" type="number" id="otp1" name="otp1"
+                                                    maxlength="1" onKeyPress="if(this.value.length==1) return false;"
+                                                    autocomplete="one-time-code" pattern="[0-9]*" min="0" max="9" />
+                                                <input class="input-otp" type="number" id="otp2" name="otp2"
+                                                    maxlength="1" onKeyPress="if(this.value.length==1) return false;"
+                                                    autocomplete="one-time-code" pattern="[0-9]*" min="0" max="9" />
+                                                <input class="input-otp" type="number" id="otp3" name="otp3"
+                                                    maxlength="1" onKeyPress="if(this.value.length==1) return false;"
+                                                    autocomplete="one-time-code" pattern="[0-9]*" min="0" max="9" />
+                                                <input class="input-otp" type="number" id="otp4" name="otp4"
+                                                    maxlength="1" onKeyPress="if(this.value.length==1) return false;"
+                                                    autocomplete="one-time-code" pattern="[0-9]*" min="0" max="9" />
+                                            </div>
+
+                                            <div class="form__message">
+                                                <!--invalid for otp__error-->
+                                                <div class="otp__error">
+                                                    <p><span class="icon-warning"></span>Invalid OTP</p>
+                                                </div>
+                                                <!--invalid or valid for otp__message-->
+                                                <div class="otp__message">
+                                                    <p class="otp__request">Haven’t received the SMS?</p>
+                                                    <p class="otp__try-again">Try Again?</p>
+                                                    <p class="otp__all-right">All right!</p>
+                                                    <div class="times">
+                                                        <p class="on__retry">ResendOTP</p>
+                                                        <p class="on__normal">Retry (in
+                                                        <span class="time__count">60</span> seconds)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide step7 result__step">
+                            <div class="slide-item">
+                                <div class="item-content completed__step">
+
+                                    <div class="master__share-but">
+                                        <span class="icon-share"></span>
+                                    </div>
+
+                                    <!-- Got Your Vote! -->
+                                    <div class="completed__box">
+
+                                        <div class="completed__box--pc">
+                                            <div class="voting-completed">
+                                                <div class="completed-icon">
+                                                    <span class="icon-double-check"></span>
+                                                </div>
+                                                <h3>Got Your Vote!</h3>
+                                                <p>
+                                                    Thanks for voting for
+                                                    <span class="artist__name">[ARTIST NAME]</span> x
+                                                    <span class="track__name">[TRACK]</span>. <br>This is your
+                                                    official entry to win VIP tickets to the Refresh Music
+                                                    Event!
+                                                </p>
+
+                                                <div class="buts full">
+                                                    <div class="but-wrap">
+                                                        <button class="action"></button>
+                                                        <a data-href="blendlist.html" href="javascript:void(0)"
+                                                            class="but dark__green particles-button openBlendList">
+                                                            <span>Stream Refresh Playlist</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="master__back__home">
+                                                    <a href="javascript:void(0)">Back To Homepage</a>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="master__popup popup__you-track" id="popHowItWork">
+    <div class="popup-inr">
+        
+        <div class="popup-close">
+            <span class="icon-close"></span>
+        </div>
+
+        <div class="popup-detail">
+            <h2>How it Works</h2>
+
+            <div class="work-list">
+                <div class="work-item">
+                    <div class="pic work-pic">
+                        <img width="71" height="135" src="images/icon-pick.png"
+                            alt="Pick a track from The Chainsmokers" />
+                    </div>
+                    <div class="work-txt">
+                        <p>1. Pick your favorite artist</p>
+                        <p>2. Match with your favorite Chainsmokers track</p>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="pic work-pic">
+                        <img width="71" height="135" src="images/icon-enter.png"
+                            alt="Pick a track from The Chainsmokers" />
+                    </div>
+                    <div class="work-txt">
+                        <p>3. Enter your info</p>
+                        <p>4. Vote for a chance to win a VIP Refresh Music Event Experience</p>
+                    </div>
+                </div>
+
+                <div class="work-item">
+                    <div class="pic work-pic">
+                        <img width="71" height="135" src="images/icon-check.png"
+                            alt="Pick a track from The Chainsmokers" />
+                    </div>
+                    <div class="work-txt">
+                        <p>5. Check if you've 
+                            won VIP tickets on (announcement date)!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buts full">
+                <div class="but-wrap">
+                    <button class="action"></button>
+                    <button class="but particles-button" id="btnGoToArt">
+                        <span>Let’s go!</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="master__popup popup__share" id="popShare">
+    <div class="popup-inr">
+        <div class="popup-close">
+            <span class="icon-close"></span>
+        </div>
+        
+        <div class="popup-detail">
+            <div class="share-logo">
+                <div class="pic logo-item">
+                    <img width="64" height="33" loading="lazy" src="images/logo.png" alt="Heineken" />
+                </div>
+                <div class="pic logo-item">
+                    <img width="69" height="68" loading="lazy" src="images/refresh-icon.png" alt="Refresh Your Music" />
+                </div>
+            </div>
+            <h2>Share</h2>
+            <div class="share-link">
+                <a href="#" target="_blank" class="pic link-facebook">
+                    <img width="64" height="64" loading="lazy" src="images/icon-facebook.png" alt="Facebook" />
+                </a>
+            </div>
+            <div class="copy-box">
+                <h3>Copy Link</h3>
+                <div class="copy-but">www.heineken.com/refresh</div>
+                <div class="copy-status">Link copied!</div>
+            </div>
+            <div class="master__back__home">
+                <a href="javascript:void(0)">Về đầu trang</a>
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="master__popup popup__voted" id="popVoted">
+    <div class="popup-inr">
+        <div class="popup-close">
+            <span class="icon-close"></span>
+        </div>
+
+        <div class="popup-detail">
+            <div class="share-logo">
+                <div class="pic logo-item">
+                    <img width="64" height="33" loading="lazy" src="images/logo.png" alt="Heineken" />
+                </div>
+                <div class="pic logo-item">
+                    <img width="69" height="68" loading="lazy" src="images/refresh-icon.png" alt="Refresh Your Music" />
+                </div>
+            </div>
+
+            <div class="phone-box">
+                <div class="pic phone-pic">
+                    <img width="52" height="100" loading="lazy" src="images/oppo.png" alt="Oops!" />
+                </div>
+                <div class="phone-txt">
+                    <h2>Oops!</h2>
+                    <h3>Looks like you've already voted.</h3>
+                </div>
+            </div>
+
+            <div class="announcement-box">
+                <p>
+                    Each user can only vote once. <br />Stay tuned on
+                    <span class="announcement-date">[announcement date]</span> <br />for
+                    the winner annoucement and <br />see if you've won a VIP ticket!
+                </p>
+            </div>
+
+            <div class="buts full">
+                <div class="but-wrap">
+                    <button class="action"></button>
+                    <a data-href="blendlist.html" href="javascript:void(0)" class="but dark__green stroke__white particles-button openBlendList">
+                        <span>Explore Refresh Playlist</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="master__back__home">
+                <a href="javascript:void(0)">Back To Homepage</a>
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="master__popup popup__ranking" id="popRanking">
+  <div class="popup-inr">
+    <div class="pic master__logo-main">
+      <img width="64" height="33" loading="lazy" src="images/logo.png" alt="Heineken" />
+    </div>
+    <div class="popup-close">
+      <span class="icon-close"></span>
+    </div>
+
+    <div class="popup-detail">
+      <h2>Refresh <br />Chart rankings</h2>
+
+      <div class="ranking-box">
+        <div class="pic ranking-pic sp">
+          <img
+            width="223"
+            height="223"
+            loading="lazy"
+            src="images/mergle1.png"
+            alt="Refresh Chart rankings"
+          />
+        </div>
+        <div class="pic main-pic pc">
+          <img width="336" height="550" loading="lazy" src="images/refresh-your-music-pc.png"
+          alt="Refresh your music" />
+        </div>
+        <div class="ranking-list">
+          
+          <div class="ranking-item">
+            <div class="ranking-number">1</div>
+            <div class="ranking-info">
+              <div class="ranking-name">[Artist 1] x [Track #1]</div>
+              <div class="ranking-vote">25 Votes</div>
+            </div>
+          </div>
+
+          <div class="ranking-item">
+            <div class="ranking-number">2</div>
+            <div class="ranking-info">
+              <div class="ranking-name">[Artist 1] x [Track #1]</div>
+              <div class="ranking-vote">25 Votes</div>
+            </div>
+          </div>
+
+          <div class="ranking-item">
+            <div class="ranking-number">3</div>
+            <div class="ranking-info">
+              <div class="ranking-name">[Artist 1] x [Track #1]</div>
+              <div class="ranking-vote">25 Votes</div>
+            </div>
+          </div>
+
+          <div class="ranking-orther">
+            <div class="ranking-item">
+              <div class="ranking-number">4</div>
+              <div class="ranking-info">
+                <div class="ranking-name">[Artist 1] x [Track #1]</div>
+                <div class="ranking-vote">25 Votes</div>
+              </div>
+            </div>
+
+            <div class="ranking-item">
+              <div class="ranking-number">5</div>
+              <div class="ranking-info">
+                <div class="ranking-name">[Artist 1] x [Track #1]</div>
+                <div class="ranking-vote">25 Votes</div>
+              </div>
+            </div>
+
+            <div class="ranking-item">
+              <div class="ranking-number">6</div>
+              <div class="ranking-info">
+                <div class="ranking-name">[Artist 1] x [Track #1]</div>
+                <div class="ranking-vote">25 Votes</div>
+              </div>
+            </div>
+
+            <div class="ranking-item">
+              <div class="ranking-number">7</div>
+              <div class="ranking-info">
+                <div class="ranking-name">[Artist 1] x [Track #1]</div>
+                <div class="ranking-vote">25 Votes</div>
+              </div>
+            </div>
+
+            <div class="ranking-item">
+              <div class="ranking-number">8</div>
+              <div class="ranking-info">
+                <div class="ranking-name">[Artist 1] x [Track #1]</div>
+                <div class="ranking-vote">25 Votes</div>
+              </div>
+            </div>
+
+            <div class="ranking-item">
+              <div class="ranking-number">9</div>
+              <div class="ranking-info">
+                <div class="ranking-name">[Artist 1] x [Track #1]</div>
+                <div class="ranking-vote">25 Votes</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="buts full">
+            <button type="button" class="but" id="btnSeeFullChart">
+              <span>See Full Chart</span>
+            </button>
+          </div>
+          
+          <div class="master__back__home">
+            <a href="javascript:void(0)">Back To Homepage</a>
+        </div>
+
+        </div>
+      </div>
+
+    
+
+     
+    </div>
+  </div>
+</div>
+
+                <div class="master__popup popup__cool" id="popCool">
+  <div class="popup-inr">
+
+    <div class="popup-close">
+      <span class="icon-close"></span>
+    </div>
+
+    <div class="popup-detail">
+      <div class="cool__top">
+        <h2>Cool Gifts are <br class="sp">Up for Grabs!</h2>
+        <p>Share your detail below far <br class="sp">a chance to get this surprise</p>
+      </div>
+
+      <form action="javascript:void(0)">
+
+        <div class="form-group">
+          <input type="text" class="input-txt" id="coolFullName" name="coolFullName" placeholder="Name"
+            autocomplete="off" />
+          <label class="caption" for="coolFullName">Full Name <sup>*</sup></label>
+          <div class="error">
+            <p>Full Name not valid</p>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="input-txt" id="coolIdNumber" name="coolIdNumber" placeholder="ID Number"
+            autocomplete="off" />
+          <label class="caption" for="coolIdNumber">ID Number <sup>*</sup></label>
+          <div class="error">
+            <p>ID Number not valid</p>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="select" id="slCity">
+            <div class="select__header">
+              <input type="text" class="select__input" placeholder="City / Province *">
+            </div>
+            <div class="error">
+              <p>City / Province not valid</p>
+            </div>
+            <div class="select__box">
+              <ul class="select__list">
+                <li class="select__item" data-value="1">TP.Hồ Chí Minh</li>
+                <li class="select__item" data-value="2">Đồng Nai</li>
+                <li class="select__item" data-value="3">Bình Dương</li>
+                <li class="select__item" data-value="4">Sóc Trăng</li>
+                <li class="select__item" data-value="5">Long An</li>
+                <li class="select__item" data-value="6">Cần Thơ</li>
+                <li class="select__item" data-value="7">An Giang</li>
+                <li class="select__item" data-value="8">Hậu Giang</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="select" id="slDicstrict">
+            <div class="select__header">
+              <input type="text" class="select__input" placeholder="District *">
+            </div>
+            <div class="error">
+              <p>District not valid</p>
+            </div>
+            <div class="select__box">
+              <ul class="select__list">
+                <li class="select__item" data-value="1">Quân 1</li>
+                <li class="select__item" data-value="2">Quân 2</li>
+                <li class="select__item" data-value="3">Quân 3</li>
+                <li class="select__item" data-value="4">Quân 4</li>
+                <li class="select__item" data-value="5">Quân 5</li>
+                <li class="select__item" data-value="6">Quân 6</li>
+                <li class="select__item" data-value="7">Quân 7</li>
+                <li class="select__item" data-value="8">Quân 8</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="select" id="slWard">
+            <div class="select__header">
+              <input type="text" class="select__input" placeholder="Ward *">
+            </div>
+            <div class="error">
+              <p>Ward not valid</p>
+            </div>
+            <div class="select__box">
+              <ul class="select__list">
+                <li class="select__item" data-value="1">Phường 7</li>
+                <li class="select__item" data-value="2">Phường 8</li>
+                <li class="select__item" data-value="3">Phường 9</li>
+                <li class="select__item" data-value="4">Phường 10</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <input type="text" class="input-txt" id="coolAddress" name="coolAddress" placeholder="Address"
+            autocomplete="nope" />
+          <label class="caption" for="coolAddress">Address <sup>*</sup></label>
+          <div class="error">
+            <p>Address not valid</p>
+          </div>
+        </div>
+
+        <div class="buts full">
+          <div class="but-wrap">
+            <button class="action"></button>
+            <button type="button" class="but dark__green particles-button" id="coolSubmit" disabled>
+              <span>Done!</span>
+            </button>
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+</div>
+                <div class="master__popup popup__voted" id="popThank">
+  <div class="popup-inr">
+    <div class="popup-close">
+      <span class="icon-close"></span>
+    </div>
+
+    <div class="popup-detail">
+      <div class="share-logo">
+        <div class="pic logo-item">
+          <img
+            width="64"
+            height="33"
+            loading="lazy"
+            src="images/logo.png"
+            alt="Heineken"
+          />
+        </div>
+        <div class="pic logo-item">
+          <img
+            width="69"
+            height="68"
+            loading="lazy"
+            src="images/refresh-icon.png"
+            alt="Refresh Your Music"
+          />
+        </div>
+      </div>
+
+      <div class="phone-box">
+        <div class="pic phone-pic">
+          <img
+            width="52"
+            height="100"
+            loading="lazy"
+            src="images/oppo.png"
+            alt="Oops!"
+          />
+        </div>
+        <div class="phone-txt">
+          <h2>Awesome!</h2>
+        </div>
+      </div>
+
+      <div class="announcement-box">
+        <p>
+          Check the homepage on <br />[announcement date] to see <br />if you're
+          one of the weekly winners.
+        </p>
+      </div>
+
+      <div class="buts full">
+          <div class="but-wrap">
+            <button class="action"></button>
+            <a data-href="blendlist.html" href="javascript:void(0)" class="but dark__green stroke__white particles-button openBlendList">
+              <span>Explore Refresh Playlist</span>
+            </a>
+        </div>
+      </div>
+
+      <div class="master__back__home">
+        <a href="javascript:void(0)">Back To Homepage</a>
+    </div>
+    </div>
+  </div>
+</div>
+
+            </div>
+
+            <audio class="audio" id="audio1" loop>
+                <source src="https://p.scdn.co/mp3-preview/5b5c3ae091f821ba0f038d89743fe4e8da7f99a6" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <audio class="audio" id="audio2" loop>
+                <source src="https://p.scdn.co/mp3-preview/e3b81f0f3532f58bd0eb554d0cc9e3f24e8f290c" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <audio class="audio" id="audio3" loop>
+                <source src="https://p.scdn.co/mp3-preview/670e79b0cfebfdfbb0dabaafe1566d3c4fba964f" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+        </div>
+
+    </div>
+
+    <!--Script-->
+    <script defer src="js/index_bundle.js"></script>
+    <script defer type="module" src="js/dev/index_main.js"></script>
+    <script defer src="js/dev/anime.min.js"></script>
+    <script defer src="js/dev/particles.js"></script>
+    <script defer type="module" src="js/dev/common_main.js"></script>
+
+    <!-- <script defer src="js/dev/demo.js"></script> -->
+    <!--/Script-->
+</body>
+
+</html>

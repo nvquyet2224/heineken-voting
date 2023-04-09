@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="google" content="notranslate" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Heineken music voting" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Heineken music voting</title>
+    <meta name="description" content="Heineken music voting" />
+    <meta name="keywords" content="Heineken music voting" />
+    <meta name="theme-color" content="#fff" />
+    <meta property="og:title" content="Heineken music voting" />
+    <meta property="og:description" content="Heineken music voting" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/thumbnail.jpg" />
+    <meta property="og:site_name" content="Heineken music voting" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Heineken music voting" />
+    <link rel="icon" href="images/favicon.png" />
+
+    <link rel="preload" as="font" crossorigin type="font/woff2" href="fonts/HEINEKENCore.woff2" />
+    <link rel="preload" as="font" crossorigin type="font/woff2" href="fonts/HEINEKENCore-Bold.woff2" />
+    <link rel="preload" as="font" crossorigin type="font/woff2" href="fonts/HEINEKENCore-ExtraBold.woff2" />
+    <link rel="preload" as="font" crossorigin type="font/woff2" href="fonts/HeinekenSerifBold.woff2" />
+    <link rel="preload" as="font" crossorigin type="font/woff2" href="fonts/SVN-FuturaMedium.woff2" />
+    <link rel="preload" as="font" crossorigin type="font/woff2" href="fonts/SVN-FuturaXBold.woff2" />
+    <link rel="preload" as="font" crossorigin type="font/woff2" href="fonts/SVN-FuturaCondMedium.woff2" />
+    <script type=“text/javascript” src=“https://nexus.ensighten.com/heineken/heineken_2020_prod/Bootstrap.js”></script>
+    <link href="css/registration.css" rel="stylesheet" rel="preload" as="style" />
+</head>
+
+<body>
+    <div class="master__page">
+        <div class="master__section voting__step">
+
+            <div class="master__section__box section__step">
+
+                <div class="voting__slider swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide step1">
+
+                            <div class="slide-item">
+                                <div class="item-content">
+                                    <div class="pic master__logo-main sp">
+                                        <img width="64" height="33" loading="lazy" src="images/logo.png"
+                                            alt="Heineken" />
+                                    </div>
+                                    <div class="pic refresh-pic">
+                                        <img width="269" height="393" src="images/bottle.gif"
+                                            alt="Refresh your music" />
+                                    </div>
+
+                                    <div class="registration-text">
+                                        <h2>Đón cơn mưa quà khủng <br class="sp">từ Heineken Refresh!</h2>
+                                        <p>Cơ hội chớp quà đỉnh và vé Fanzone dự Heineken Refresh <br class="sp">dành
+                                            cho các fan may mắn nhất!</p>
+                                    </div>
+
+                                    <div class="buts full">
+                                        <div class="but-wrap">
+                                            <button class="action"></button>
+                                            <button type="button" class="but particles-button" id="btnHunterNow">
+                                                <span>Săn ngay</span>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="pic warning__pic">
+                                        <img width="654" height="51" loading="lazy" src="images/warning.png"
+                                        alt="Người dưới 18 không được uống rượu, bia" />
+                                    </div>
+                                    
+                                    <div class="master__step__nav single">
+                                        <div class="master__nav__next" data-next="1">
+                                            <span class="icon-next"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide step2 login__step">
+                            <div class="slide-item">
+                                <div class="item-content">
+
+                                    <div class="login-form">
+
+                                        <div class="flow__top">
+                                            <h2>Nhập Thông tin cá nhân</h2>
+                                            <p>Nhớ điền hết thông tin để săn quà nhé</p>
+                                        </div>
+
+                                        <form action="javascript:void(0);">
+
+                                            <div class="form-group">
+                                                <input type="text" class="input-txt" id="lg_name" name="lg_name"
+                                                    placeholder="Họ tên" autocomplete="nope" />
+                                                <label class="caption" for="lg_name">Họ tên <sup>*</sup></label>
+                                                <div class="error">
+                                                    <p>Họ tên không hợp lệ</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <input type="text" class="input-txt" id="lg_cmnd" name="lg_cmnd"
+                                                    placeholder="Số CMND/ CCCD" autocomplete="off" />
+                                                <label class="caption" for="lg_cmnd">Số CMND/ CCCD <sup>*</sup></label>
+                                                <div class="error">
+                                                    <p>Số CMND/ CCCD không hợp lệ</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="select" id="slCity">
+                                                    <div class="select__header">
+                                                        <input type="text" class="select__input"
+                                                            placeholder="Thành phố/ Tỉnh *">
+                                                    </div>
+                                                    <div class="error">
+                                                        <p>Thành phố/ Tỉnh không hợp lệ</p>
+                                                    </div>
+                                                    <div class="select__box">
+                                                        <ul class="select__list">
+                                                            <li class="select__item" data-value="1">TP.Hồ Chí Minh</li>
+                                                            <li class="select__item" data-value="2">Đồng Nai</li>
+                                                            <li class="select__item" data-value="3">Bình Dương</li>
+                                                            <li class="select__item" data-value="4">Sóc Trăng</li>
+                                                            <li class="select__item" data-value="5">Long An</li>
+                                                            <li class="select__item" data-value="6">Cần Thơ</li>
+                                                            <li class="select__item" data-value="7">An Giang</li>
+                                                            <li class="select__item" data-value="8">Hậu Giang</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="select" id="slDicstrict">
+                                                    <div class="select__header">
+                                                        <input type="text" class="select__input"
+                                                            placeholder="Quận/ Huyện *">
+                                                    </div>
+                                                    <div class="error">
+                                                        <p>Quận/ Huyện không hợp lệ</p>
+                                                    </div>
+                                                    <div class="select__box">
+                                                        <ul class="select__list">
+                                                            <li class="select__item" data-value="1">Quân 1</li>
+                                                            <li class="select__item" data-value="2">Quân 2</li>
+                                                            <li class="select__item" data-value="3">Quân 3</li>
+                                                            <li class="select__item" data-value="4">Quân 4</li>
+                                                            <li class="select__item" data-value="5">Quân 5</li>
+                                                            <li class="select__item" data-value="6">Quân 6</li>
+                                                            <li class="select__item" data-value="7">Quân 7</li>
+                                                            <li class="select__item" data-value="8">Quân 8</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="select" id="slWard">
+                                                    <div class="select__header">
+                                                        <input type="text" class="select__input"
+                                                            placeholder="Phường/ Xã *">
+                                                    </div>
+                                                    <div class="error">
+                                                        <p>Phường/ Xã không hợp lệ</p>
+                                                    </div>
+                                                    <div class="select__box">
+                                                        <ul class="select__list">
+                                                            <li class="select__item" data-value="1">Phường 7</li>
+                                                            <li class="select__item" data-value="2">Phường 8</li>
+                                                            <li class="select__item" data-value="3">Phường 9</li>
+                                                            <li class="select__item" data-value="4">Phường 10</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <input type="text" class="input-txt" id="lg_address" name="lg_address"
+                                                    placeholder="Địa chỉ" autocomplete="nope" />
+                                                <label class="caption" for="lg_address">Địa chỉ <sup>*</sup></label>
+                                                <div class="error">
+                                                    <p>Địa chỉ không hợp lệ</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <input type="text" class="input-txt" id="lg_phone" name="lg_phone"
+                                                    placeholder="Số điện thoại" autocomplete="nope" />
+                                                <label class="caption" for="lg_phone">Số điện thoại
+                                                    <sup>*</sup></label>
+                                                <div class="error">
+                                                    <p>Số điện thoại không hợp lệ</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <input type="text" class="input-txt" id="lg_email" name="lg_email"
+                                                    placeholder="Email" autocomplete="nope" />
+                                                <label class="caption" for="lg_email">Email <sup>*</sup></label>
+                                                <div class="error">
+                                                    <p>Email not valid</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group checkbox__group">
+                                                <div class="check-item">
+                                                    <input type="checkbox" class="check-input" id="chkCondition"
+                                                        name="chkCondition" checked />
+                                                    <label class="check-caption"><a href="tnc-registration.html" target="_blank">Đồng
+                                                            ý với Điều khoản & Thể lệ</a></label>
+                                                </div>
+                                                <div class="check-item">
+                                                    <input type="checkbox" class="check-input" id="chkPrivacy"
+                                                        name="chkPrivacy" checked />
+                                                    <label class="check-caption"><a href="privacy.html"
+                                                            target="_blank">Đồng ý với Chính sách Cookie và Bảo mật
+                                                            thông tin</a>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="buts full">
+                                                <div class="but-wrap">
+                                                    <button class="action"></button>
+                                                    <button type="button" class="but dark__green particles-button"
+                                                        id="loginSubmit" disabled>
+                                                        <span>Xong rồi!</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                        </form>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide step3 otp__step">
+                            <div class="slide-item">
+                                <div class="item-content">
+
+                                    <div class="otp-form">
+
+                                        <div class="pic logo">
+                                            <img width="64" height="33" loading="lazy" src="images/logo.png"
+                                                alt="Heineken" />
+                                        </div>
+
+                                        <div class="pic logo-refresh">
+                                            <img width="178" height="135" loading="lazy" src="images/refresh-icon.png"
+                                                alt="Refresh your music" />
+                                        </div>
+
+                                        <div class="otp-pc">
+
+                                            <div class="flow__top">
+                                                <h3>Ye! Sắp xong rồi</h3>
+                                            </div>
+
+                                            <div class="otp__brief">
+                                                <p>
+                                                    OTP gửi đến <br class="sp" /><span
+                                                        class="your-phone">0908788944</span>
+                                                    <br />Mã của bạn là
+                                                </p>
+                                            </div>
+
+                                            <div class="otp__list">
+                                                <input class="input-otp" type="number" id="otp1" name="otp1"
+                                                    maxlength="1" onKeyPress="if(this.value.length==1) return false;"
+                                                    autocomplete="one-time-code" pattern="[0-9]*" min="0" max="9" />
+                                                <input class="input-otp" type="number" id="otp2" name="otp2"
+                                                    maxlength="1" onKeyPress="if(this.value.length==1) return false;"
+                                                    autocomplete="one-time-code" pattern="[0-9]*" min="0" max="9" />
+                                                <input class="input-otp" type="number" id="otp3" name="otp3"
+                                                    maxlength="1" onKeyPress="if(this.value.length==1) return false;"
+                                                    autocomplete="one-time-code" pattern="[0-9]*" min="0" max="9" />
+                                                <input class="input-otp" type="number" id="otp4" name="otp4"
+                                                    maxlength="1" onKeyPress="if(this.value.length==1) return false;"
+                                                    autocomplete="one-time-code" pattern="[0-9]*" min="0" max="9" />
+                                            </div>
+
+                                            <div class="form__message">
+                                                <!--invalid for otp__error-->
+                                                <div class="otp__error">
+                                                    <p><span class="icon-warning"></span>Invalid OTP</p>
+                                                </div>
+                                                <!--invalid or valid for otp__message-->
+                                                <div class="otp__message">
+                                                    <p class="otp__request">Chưa nhận được tin nhắn?</p>
+                                                    <p class="otp__try-again">Thử lại?</p>
+                                                    <p class="otp__all-right">Xong nha!</p>
+                                                    <div class="times">
+                                                        <p class="on__retry">Gửi lại OTP</p>
+                                                        <p class="on__normal">Thử lại ( <span
+                                                                class="time__count">60</span> s)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide step4 result__step">
+                            <div class="slide-item">
+                                <div class="item-content completed__step">
+
+                                    <div class="master__share-but">
+                                        <span class="icon-share"></span>
+                                    </div>
+
+                                    <!-- Got Your Vote! -->
+                                    <div class="completed__box">
+
+                                        <div class="completed__box--pc">
+                                            <div class="voting-completed">
+                                                <div class="completed-icon">
+                                                    <span class="icon-double-check"></span>
+                                                </div>
+                                                <h3>Vậy là xong</h3>
+                                                <p>Kết quả trúng thưởng sẽ được công bố vào <br class="sp">ngày [ngày]
+                                                    bạn nhé!</p>
+                                                <div class="master__back__home">
+                                                    <a href="javascript:void(0)">Về đầu trang</a>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="master__popup popup__voted popup__error" id="popError">
+  <div class="popup-inr">
+    <div class="popup-close">
+      <span class="icon-close"></span>
+    </div>
+
+    <div class="popup-detail">
+      <div class="share-logo">
+        <div class="pic logo-item">
+          <img
+            width="64"
+            height="33"
+            loading="lazy"
+            src="images/logo.png"
+            alt="Heineken"
+          />
+        </div>
+        <div class="pic logo-item">
+          <img
+            width="69"
+            height="68"
+            loading="lazy"
+            src="images/refresh-icon.png"
+            alt="Refresh Your Music"
+          />
+        </div>
+      </div>
+
+      <div class="phone-box">
+        <div class="pic phone-pic">
+          <img
+            width="52"
+            height="100"
+            loading="lazy"
+            src="images/error-phone.png"
+            alt="Oops!"
+          />
+        </div>
+        <div class="phone-txt">
+          <h2>Úi! Có gì đó sai sai</h2>
+        </div>
+      </div>
+
+      <div class="announcement-box">
+        <p>
+          Nhờ bạn "refresh" <br>và thử lại sau ít phút nhé!</p>
+      </div>
+
+      <div class="buts full">
+          <div class="but-wrap">
+            <button class="action"></button>
+            <button type="button" class="but dark__green stroke__white particles-button" id="btnRetry">
+              <span>Thử lại</span>
+            </button>
+        </div>
+      </div>
+
+      <div class="master__back__home">
+        <a href="javascript:void(0)">Về đầu trang</a>
+    </div>
+    </div>
+  </div>
+</div>
+
+                <div class="master__popup popup__share" id="popShare">
+    <div class="popup-inr">
+        <div class="popup-close">
+            <span class="icon-close"></span>
+        </div>
+        
+        <div class="popup-detail">
+            <div class="share-logo">
+                <div class="pic logo-item">
+                    <img width="64" height="33" loading="lazy" src="images/logo.png" alt="Heineken" />
+                </div>
+                <div class="pic logo-item">
+                    <img width="69" height="68" loading="lazy" src="images/refresh-icon.png" alt="Refresh Your Music" />
+                </div>
+            </div>
+            <h2>Share</h2>
+            <div class="share-link">
+                <a href="#" target="_blank" class="pic link-facebook">
+                    <img width="64" height="64" loading="lazy" src="images/icon-facebook.png" alt="Facebook" />
+                </a>
+            </div>
+            <div class="copy-box">
+                <h3>Copy Link</h3>
+                <div class="copy-but">www.heineken.com/refresh</div>
+                <div class="copy-status">Link copied!</div>
+            </div>
+            <div class="master__back__home">
+                <a href="javascript:void(0)">Về đầu trang</a>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--Script-->
+    <script defer src="js/registration_bundle.js"></script>
+    <script defer type="module" src="js/dev/registration_main.js"></script>
+    <script defer src="js/dev/anime.min.js"></script>
+    <script defer src="js/dev/particles.js"></script>
+    <script defer type="module" src="js/dev/common_main.js"></script>
+    <!--/Script-->
+</body>
+
+</html>
